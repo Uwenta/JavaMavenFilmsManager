@@ -2,41 +2,37 @@ package ru.netology;
 
 public class FilmsManager {
 
-    private String[] films = new String[0];
+    private FilmsRepository repo;
     private int limit = 10;
 
-    public FilmsManager() {
-
+    public FilmsManager(FilmsRepository repo) {
+        this.repo = repo;
     }
 
-    public FilmsManager(int limit) {
+    public FilmsManager(int limit, FilmsRepository repo) {
         this.limit = limit;
+        this.repo = repo;
     }
 
-    public void save(String newFilm) {
-        String[] tmp = new String[films.length + 1];
-        for (int i = 0; i < films.length; i++) {
-            tmp[i] = films[i];
-        }
-        tmp[tmp.length - 1] = newFilm;
-        films = tmp;
-
+    public void add(Banner newFilm) {
+        repo.save(newFilm);
     }
 
-    public String[] findAll() {
-        return films;
 
+    public Banner[] findAll() {
+        return repo.findAll();
     }
 
-    public String[] findLost() {
+    public Banner[] findLost() {
         int countLost;
-        if (limit > films.length) {
-            countLost = films.length;
+        int countAll = findAll().length;
+        if (limit > countAll) {
+            countLost = countAll;
         } else countLost = limit;
 
-        String[] findLost = new String[countLost];
-        for (int i = 0; i < findLost.length; i++) {
-            findLost[i] = films[films.length - 1 - i];
+        Banner[] findLost = new Banner[countLost];
+        for (int i = 0; i < countLost; i++) {
+            findLost[i] = findAll()[countAll - 1 - i];
         }
         return findLost;
 
