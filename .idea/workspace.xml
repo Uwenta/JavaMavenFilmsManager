@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d02f3c-897a-4064-8caa-08c086f3f035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/FilmsManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Banner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/FilmsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/FilmRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FilmsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/FilmsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/FilmsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/FilmsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/FilmsManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/FilmsManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2BAeMeJ4kZeYvZ47MbdcN2r2eYM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,16 +45,49 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/Public/Documents/QA/JavaMavenFilmsManager/src/test/java"
+    "last_directory_selection": "C:/Users/Public/Documents/QA/JavaMavenFilmsManager/src/main/java/ru/netology",
+    "last_opened_file_path": "C:/Users/Public/Documents/QA/JavaMavenFilmsManager"
   }
 }]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean jacoco:check" />
       <command value="mvn jacoco:report" />
+      <command value="mvn clean jacoco:check" />
+      <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FilmsManagerTest.shouldFindLostWithLimit5">
+  <component name="RunManager" selected="JUnit.FilmsManagerTest">
+    <configuration name="FilmRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenFilmsManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.FilmRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmRepositoryTest.shouldRemoveAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaMavenFilmsManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.FilmRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldRemoveAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FilmsManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenFilmsManager" />
       <extension name="coverage">
@@ -65,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilmsManagerTest.shouldFindLostWithLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmsManagerTest.shouldAddAndFindAllFilms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenFilmsManager" />
       <extension name="coverage">
         <pattern>
@@ -75,13 +113,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.FilmsManagerTest" />
-      <option name="METHOD_NAME" value="shouldFindLostWithLimit" />
+      <option name="METHOD_NAME" value="shouldAddAndFindAllFilms" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilmsManagerTest.shouldFindLostWithLimit10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmsManagerTest.shouldFindLostWithoutLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaMavenFilmsManager" />
       <extension name="coverage">
         <pattern>
@@ -91,39 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.FilmsManagerTest" />
-      <option name="METHOD_NAME" value="shouldFindLostWithLimit10" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmsManagerTest.shouldFindLostWithLimit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaMavenFilmsManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.FilmsManagerTest" />
-      <option name="METHOD_NAME" value="shouldFindLostWithLimit5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmsManagerTest.shouldFindLostWithLimit6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaMavenFilmsManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.FilmsManagerTest" />
-      <option name="METHOD_NAME" value="shouldFindLostWithLimit6" />
+      <option name="METHOD_NAME" value="shouldFindLostWithoutLimit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FilmsManagerTest.shouldFindLostWithLimit5" />
         <item itemvalue="JUnit.FilmsManagerTest" />
-        <item itemvalue="JUnit.FilmsManagerTest.shouldFindLostWithLimit6" />
-        <item itemvalue="JUnit.FilmsManagerTest.shouldFindLostWithLimit10" />
-        <item itemvalue="JUnit.FilmsManagerTest.shouldFindLostWithLimit" />
+        <item itemvalue="JUnit.FilmRepositoryTest" />
+        <item itemvalue="JUnit.FilmsManagerTest.shouldFindLostWithoutLimit" />
+        <item itemvalue="JUnit.FilmsManagerTest.shouldAddAndFindAllFilms" />
+        <item itemvalue="JUnit.FilmRepositoryTest.shouldRemoveAll" />
       </list>
     </recent_temporary>
   </component>
